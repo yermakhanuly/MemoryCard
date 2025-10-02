@@ -1,16 +1,68 @@
-# React + Vite
+# Memory Card Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple memory card game built with React. Click on each card only once—if you click the same card twice, your score resets! Try to get the highest score possible.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 12 unique character cards
+- Score and best score tracking
+- Cards shuffle after every click
+- Responsive layout
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
 
-## Expanding the ESLint configuration
+- [Node.js](https://nodejs.org/) (v14 or higher recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/your-username/memory-card-game.git
+   cd memory-card-game
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Start the development server:**
+   ```sh
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser to play the game.
+
+## Project Structure
+
+```
+src/
+  ├── App.jsx           # Main app component
+  ├── Components/
+  │     ├── Body.jsx    # Card grid and shuffle logic
+  │     └── Header.jsx  # Game title and score display
+  └── Style/
+        └── main.css    # Styling for the game
+```
+
+## How to Play
+
+- Click on any card to score a point.
+- After each click, the cards will shuffle.
+- If you click the same card twice, your score resets to zero.
+- Try to beat your best score!
+
+## Customization
+
+- You can change the card images and names in `src/Components/Body.jsx` by editing the `imgSrc` array.
+
+## License
+
+This project is for learning purposes.
